@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/iconback"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:onClick="buybuilding"
+                    android:src="@drawable/mcancel" />
+
+                <TextView
+                    android:id="@+id/labelback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/iconback"
+                    android:text="Cancel"
+                    android:onClick="buybuilding"
+                    android:textSize="32dp" />
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/icontimber_yard"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:onClick="buybuilding"
+                    android:src="@drawable/timber_yard" />
+
+                <TextView
+                    android:id="@+id/labeltimber_yard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/icontimber_yard"
+                    android:text="Timber Yard (200$)"
+                    android:onClick="buybuilding"
+                    android:textSize="32dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/iconjoinery"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:onClick="buybuilding"
+                    android:src="@drawable/joinery" />
+
+                <TextView
+                    android:id="@+id/labeljoinery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/iconjoinery"
+                    android:text="Joinery (400$)"
+                    android:onClick="buybuilding"
+                    android:textSize="32dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/iconroad"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:onClick="buybuilding"
+                    android:src="@drawable/road" />
+
+                <TextView
+                    android:id="@+id/labelroad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/iconroad"
+                    android:text="Road (40$)"
+                    android:onClick="buybuilding"
+                    android:textSize="32dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/iconfurnitureshop"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:onClick="buybuilding"
+                    android:src="@drawable/furnitureshop" />
+
+                <TextView
+                    android:id="@+id/labelfurnitureshop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/iconfurnitureshop"
+                    android:text="Furniture Shop (1500$)"
+                    android:onClick="buybuilding"
+                    android:textSize="32dp" />
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/iconwheatfield"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:onClick="buybuilding"
+                    android:src="@drawable/wheatfieldgrown" />
+
+                <TextView
+                    android:id="@+id/labelwheatfield"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/iconwheatfield"
+                    android:text="Wheat field (50$)"
+                    android:onClick="buybuilding"
+                    android:textSize="32dp" />
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="buybuilding"
+                android:id="@+id/rlwindmill" >
+
+                <ImageView
+                    android:id="@+id/iconwindmill"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/windmill" />
+
+                <TextView
+                    android:id="@+id/labelwindmill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/iconwindmill"
+                    android:text="Windmill (400$)"
+                    android:textSize="32dp" />
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="buybuilding"
+                android:id="@+id/rlbakery" >
+
+                <ImageView
+                    android:id="@+id/iconbakery"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/bakery" />
+
+                <TextView
+                    android:id="@+id/labelbakery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/iconbakery"
+                    android:text="Bakery (800$)"
+                    android:textSize="32dp" />
+            </RelativeLayout>
+            
+             <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="buybuilding"
+                android:id="@+id/rlwell" >
+
+                <ImageView
+                    android:id="@+id/iconwell"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/well" />
+
+                <TextView
+                    android:id="@+id/labelwell"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/iconwell"
+                    android:text="Well (70$)"
+                    android:textSize="32dp" />
+            </RelativeLayout>
+            
+             <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="buybuilding"
+                android:id="@+id/rlstreetlamp" >
+
+                <ImageView
+                    android:id="@+id/iconstreetlamp"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/street_lamp" />
+
+                <TextView
+                    android:id="@+id/labelstreetlamp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/iconstreetlamp"
+                    android:text="Street lamp (60$)"
+                    android:textSize="32dp" />
+            </RelativeLayout>
+            
+             <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="buybuilding"
+                android:id="@+id/rlelectronicp" >
+
+                <ImageView
+                    android:id="@+id/iconelectronicparts"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/electronicparts" />
+
+                <TextView
+                    android:id="@+id/labelelectronicparts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/iconelectronicparts"
+                    android:text="Electronic parts factory (6000$)"
+                    android:textSize="32dp" />
+            </RelativeLayout>
+            
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
